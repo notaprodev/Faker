@@ -18,3 +18,5 @@ class PhoneNumber extends \Faker\Provider\PhoneNumber
         '+355 (0)## ### ###',
     ];
 }
+/* https://en.wikipedia.org/wiki/Telephone_numbers_in_Albania
+*/

@@ -80,16 +80,4 @@ class Person extends \Faker\Provider\Person
     {
         return static::randomElement(static::$suffix);
     }
-
-    /**
-     * TaxCode (CodiceFiscale)
-     *
-     * @see https://it.wikipedia.org/wiki/Codice_fiscale
-     *
-     * @return string
-     */
-    public static function taxId()
-    {
-        return strtoupper(static::bothify('??????##?##?###?'));
-    }
 }

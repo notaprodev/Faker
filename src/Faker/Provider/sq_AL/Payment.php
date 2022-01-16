@@ -4,16 +4,8 @@ namespace Faker\Provider\sq_AL;
 
 class Payment extends \Faker\Provider\Payment
 {
-    /**
-     * International Bank Account Number (IBAN)
-     *
-     * @see http://en.wikipedia.org/wiki/International_Bank_Account_Number
-     *
-     * @param string $prefix      for generating bank account number of a specific bank
-     * @param string $countryCode ISO 3166-1 alpha-2 country code
-     * @param int    $length      total length without country code and 2 check digits
-     *
-     * @return string
+    /*
+    https://www.xe.com/ibancalculator/sample/?ibancountry=albania
      */
     public static function bankAccountNumber($prefix = '', $countryCode = 'AL', $length = null)
     {
