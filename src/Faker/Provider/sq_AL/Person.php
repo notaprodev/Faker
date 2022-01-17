@@ -21,7 +21,10 @@ class Person extends \Faker\Provider\Person
         '{{firstNameFemale}} {{lastName}}',
         '{{titleFemale}} {{firstNameFemale}} {{lastName}}',
     ];
-
+    /**
+     * @see https://telegrafi.com/qindra-emra-shqiptare-dhe-ilire-per-femijen-tuaj/
+     * @see https://www.behindthename.com/names/usage/albanian
+     */
     protected static $firstNameMale = [
         'Adriatik','Afrim','Agim','Agron','Alban','Altin','And','Aranit','Arben','Arbenor','Arber','Arberor','Arbi','Arbian',
         'Arbor','Ardian','Argjend','Arianit','Arion','Arlind','Armir','Artan','Artian','Artin','Arzen','Askan','Astrit','Atintan','Bamir','Bardh',
@@ -42,7 +45,10 @@ class Person extends \Faker\Provider\Person
         'Urim','Val','Emilian','Emiliano','Valdet','Gerjan','Gentian','Gert','Valmir','Ylber','Ylli','Zaimin','Zamir','Zef','Zymbyl',
         
     ];
-
+    /**
+     * @see https://telegrafi.com/qindra-emra-shqiptare-dhe-ilire-per-femijen-tuaj/
+     * @see https://www.behindthename.com/names/usage/albanian
+     */
     protected static $firstNameFemale = [
         'Afeida','Aferdita','Afrime','Aida','Adela','Alma','Albana','Albanona','Albanora','Albulena','Alketa','Ana','Andina','Anduena','Anila','Aranita',
         'Arba','Arbana','Arbena','Arbenore','Arberasha','Arbiana','Ardiana','Argjela','Arjeta','Arlinda','Armira','Arnisa','Artiana','Artina',
@@ -56,7 +62,9 @@ class Person extends \Faker\Provider\Person
         'Yllëza','Zamira','Zana',
 
     ];
-
+    /**
+     * @see https://en.wikipedia.org/wiki/List_of_most_common_surnames_in_Europe#Albania
+     */
     protected static $lastName = [
         'Çajupi','Çekani','Hoxha','Shehu','Prifti','Çela','Leka','Dervishi','Hysi','Rama','Dibra','Abazi','Sinani','Gjika','Kola','Kraja','Luka',
         'Duka','Gjoka','Murati','Kristi','Mulo','Muço','Andoni','Hasani','Koçi','Frashëri','Ruçi','Zeneli','Papa','Spahiu','Balla','Bushati',

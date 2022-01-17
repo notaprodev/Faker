@@ -4,19 +4,14 @@ namespace Faker\Provider\sq_AL;
 
 class PhoneNumber extends \Faker\Provider\PhoneNumber
 {
+    /**
+     * @see https://en.wikipedia.org/wiki/Telephone_numbers_in_Albania
+     */
     protected static $formats = [
-        '+### (#) ## ## #####',
-        '+### ## #######',
-        '+### ## ########',
-        '+### ### #######',
-        '+### ### ########',
-        '+### #### #######',
-        '+### #### ########',
-        '00### ### ####',
+        '+355 (#) ## ## #####',
+        '00355 ### ####',
         '+355 0## ### ###',
-        '3## ### ###',
+        '0## ## ## ###',
         '+355 (0)## ### ###',
     ];
 }
-/* https://en.wikipedia.org/wiki/Telephone_numbers_in_Albania
-*/
