@@ -25,23 +25,23 @@ class Address extends \Faker\Provider\Address
         'Haki Taha', 'Faik Konica', 'Isuf Xhelili', 'Ali Asllani', 'Fato Berberi', 'Dardania', 'Princ Vidi',
     ];
     /**
-     * @see https://en.wikipedia.org/wiki/Foreign_relations_of_Albania
+     * @see https://sq.wikipedia.org/wiki/Lista_e_shteteve
      */
     protected static $country = [
-        'Afganistan', 'Algjeria', 'American Samoa', 'Andorra', 'Angola','Antartide (territori a sud del 60° parallelo)', 'Argjentina', 'Armenia',
+        'Afganistan', 'Algjeria', 'American Samoa', 'Andorra', 'Angola', 'Antartide', 'Argjentina', 'Armenia',
         'Australia', 'Austria', 'Azerbaigjan', 'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Bjellorusia', 'Belgjike', 'Bermuda', 'Bhutan', 
-        'Bolivia', 'Bosnia dhe Herzegovina', 'Brazil', 'Bullgaria','Kambogjia', 'Kamerun', 'Kanada', 'Afrika e jugut', 'Çad', 'Çili', 'Kina',
-         'Kolombia', 'Kongo', 'Kosta Rika', 'Kroacia', 'Kuba', 'Çipro', 'Republika Çeke','Danimarka', 'Republika Dominikane','Ekuador',
+        'Bolivia', 'Bosnia dhe Herzegovina', 'Brazil', 'Bullgaria', 'Kambogjia', 'Kamerun', 'Kanada', 'Afrika e jugut', 'Çad', 'Çili', 'Kina',
+         'Kolombia', 'Kongo', 'Kosta Rika', 'Kroacia', 'Kuba', 'Çipro', 'Republika Çeke', 'Danimarka', 'Republika Dominikane', 'Ekuador',
           'El Salvador', 'Estonia', 'Etiopia', 'Figji', 'Finland', 'Franc', 'Gabon', 'Gambia', 'Georgia', 'Germania', 'Gana', 'Gjibilteri', 
-          'Greqia', 'Guatemala', 'Guinea','Haiti', 'Vatikani', 'Honduras', 'Hong Kong', 'Ungheria','Islanda', 'India', 'Indonesia', 'Iran', 
-          'Irak', 'Irlanda', 'Izrael', 'Itali','Gjamaika', 'Japonia','Kazakhstan', 'Kenya', 'Kiribati', 'Korea', 'Kuvait', 'Letonia', 'Lebanon', 
-          'Liberia', 'Litenshtain', 'Lituania', 'Luksemburg','Marok', 'Macedonia', 'Madagaskar', 'Malesia', 'Maldive', 'Mali', 'Malta', 'Meksika',
-           'Mikronezia', 'Moldova', 'Mongolia', 'Mali i zi', 'Namibia', 'Nepal', 'Olanda', 'Nuova Caledonia', 'Zelenada e re','Shtete e bashkuara te Amerikes'
+          'Greqia', 'Guatemala', 'Guinea', 'Haiti', 'Vatikani', 'Honduras', 'Hong Kong', 'Ungheria', 'Islanda', 'India', 'Indonesia', 'Iran', 
+          'Irak', 'Irlanda', 'Izrael', 'Itali','Gjamaika', 'Japonia', 'Kazakhstan', 'Kenya', 'Kiribati', 'Korea', 'Kuvait', 'Letonia', 'Lebanon', 
+          'Liberia', 'Litenshtain', 'Lituania', 'Luksemburg', 'Marok', 'Macedonia', 'Madagaskar', 'Malesia', 'Maldive', 'Mali', 'Malta', 'Meksika',
+           'Mikronezia', 'Moldova', 'Mongolia', 'Mali i zi', 'Namibia', 'Nepal', 'Olanda', 'Nuova Caledonia', 'Zelenada e re', 'Shtete e bashkuara te Amerikes'
          'Nikaragua', 'Nigeria', 'Norvegia', 'Oman','Pakistan', 'Palestina', 'Panama', 'Paraguai', 'Peru', 'Filipine', 'Polonia', 'Portugalia',
           'Porto Rico','Katar', 'Rumani', 'Rusi', 'Samoa', 'San Marino', 'Arabia Saudite', 'Senegal', 'Serbia', 'Sierra Leone', 'Singapore', 
           'Slovenia', 'Somalia', 'Spanja', 'Sri Lanka', 'Sudan', 'Zvicra', 'Siria','Taivan', 'Tagjikistan', 'Tanzania', 'Tailanda', 
-        'Tunisia', 'Turçia', 'Turkmenistan','Uganda', 'Ukraina', 'Emiratet e bashkuara Arabe', , 'Uzbekistan',, 'Venezuela', 'Vietnam',
-        'Jemen','Zambia', 'Zimbabwe',
+        'Tunisia', 'Turçia', 'Turkmenistan','Uganda', 'Ukraina', 'Emiratet e bashkuara Arabe', 'Uzbekistan', 'Venezuela', 'Vietnam',
+        'Jemen', 'Zambia', 'Zimbabwe',
     ];
     protected static $buildingNumber = ['%##', '%#', '%'];
     protected static $streetSuffix = [
@@ -65,5 +65,5 @@ class Address extends \Faker\Provider\Address
     {
         return static::randomElement(static::$city);
     }
-
+    
 }
