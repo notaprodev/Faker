@@ -3,7 +3,7 @@
 # Faker
 
 [![Packagist Downloads](https://img.shields.io/packagist/dm/FakerPHP/Faker)](https://packagist.org/packages/fakerphp/faker)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/FakerPHP/Faker/Tests/main)](https://github.com/FakerPHP/Faker/actions)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/FakerPHP/Faker/tests.yaml?branch=2.0)](https://github.com/FakerPHP/Faker/actions)
 [![Type Coverage](https://shepherd.dev/github/FakerPHP/Faker/coverage.svg)](https://shepherd.dev/github/FakerPHP/Faker)
 [![Code Coverage](https://codecov.io/gh/FakerPHP/Faker/branch/main/graph/badge.svg)](https://codecov.io/gh/FakerPHP/Faker)
 
@@ -15,7 +15,7 @@ It's heavily inspired by Perl's [Data::Faker](https://metacpan.org/pod/Data::Fak
 
 ### Installation
 
-Faker requires PHP >= 7.1.
+Faker requires PHP >= 7.4.
 
 ```shell
 composer require fakerphp/faker
@@ -31,6 +31,9 @@ Use `Faker\Factory::create()` to create and initialize a Faker generator, which 
 
 ```php
 <?php
+
+declare(strict_types=1);
+
 require_once 'vendor/autoload.php';
 
 // use the factory to create a Faker\Generator instance
@@ -48,6 +51,9 @@ Each call to `$faker->name()` yields a different (random) result. This is becaus
 
 ```php
 <?php
+
+declare(strict_types=1);
+
 for ($i = 0; $i < 3; $i++) {
     echo $faker->name() . "\n";
 }
@@ -57,9 +63,51 @@ for ($i = 0; $i < 3; $i++) {
 // 'Orlo Bergstrom'
 ```
 
+## Automated refactoring
+
+If you already used this library with its properties, they are now deprecated and needs to be replaced by their equivalent methods.
+
+You can use the provided [Rector](https://github.com/rectorphp/rector) config file to automate the work.
+
+Run
+
+```bash
+composer require --dev rector/rector
+```
+
+to install `rector/rector`.
+
+Run
+
+```bash
+vendor/bin/rector process src/ --config vendor/fakerphp/faker/rector-migrate.php
+```
+
+to run `rector/rector`.
+
+*Note:* do not forget to replace `src/` with the path to your source directory.
+
+Alternatively, import the configuration in your `rector.php` file:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use Rector\Config;
+
+return static function (Config\RectorConfig $rectorConfig): void {
+    $rectorConfig->import('vendor/fakerphp/faker/rector-migrate.php');
+};
+```
+
 ## License
 
 Faker is released under the MIT License. See [`LICENSE`](LICENSE) for details.
+
+## PHP Version Support Policy
+
+The maintainers of this package add support for a PHP version following its initial release and drop support for a PHP version one year after it has reached its end of security support.
 
 ## Backward compatibility promise
 
